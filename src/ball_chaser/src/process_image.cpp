@@ -27,7 +27,7 @@ void process_image_callback(const sensor_msgs::Image img)
     // Then, identify if this pixel falls in the left, mid, or right side of the image
     // Depending on the white ball position, call the drive_bot function and pass velocities to it
     // Request a stop when there's no white ball seen by the camera
-      for (size_t i = 0; i < img->height * img->step; i += 3) {
+    /*  for (size_t i = 0; i < img->height * img->step; i += 3) {
             int red = img->data[i];
             int green = img->data[i + 1];
             int blue = img->data[i + 2];
@@ -38,7 +38,7 @@ void process_image_callback(const sensor_msgs::Image img)
                 // calculated pixel position or coordinates in the image
             }
         
-    }
+    }*/
 }
 
 int main(int argc, char** argv)
