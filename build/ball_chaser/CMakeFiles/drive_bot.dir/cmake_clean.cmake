@@ -2,7 +2,6 @@ file(REMOVE_RECURSE
   "/home/jeffoldubuntu/catkin_ws/devel/lib/ball_chaser/drive_bot"
   "/home/jeffoldubuntu/catkin_ws/devel/lib/ball_chaser/drive_bot.pdb"
   "CMakeFiles/drive_bot.dir/src/drive_bot.cpp.o"
-  "CMakeFiles/drive_bot.dir/src/process_image.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.
