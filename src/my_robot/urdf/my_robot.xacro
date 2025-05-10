@@ -33,34 +33,34 @@
                                                     <visual name='chassis_visual'>
                                                       <origin xyz="0 0 0.1" rpy=" 0 0 0"/>
                                                       <geometry>
-                                                        <box size=".4 .2 .2"/>
+                                                        <box size=".4 .2 .4"/>
                                                       </geometry>
                                                     </visual>
 
 
                                                     <collision name='back_caster_collision'>
-                                                      <origin xyz="-0.15 0 -0.05" rpy=" 0 0 0"/>
+                                                      <origin xyz="-0.15 0 -0.15" rpy=" 0 0 0"/>
                                                       <geometry>
                                                         <sphere radius="0.0499"/>
                                                       </geometry>
                                                     </collision>
 
                                                     <visual name='back_caster_visual'>
-                                                      <origin xyz="-0.15 0 -0.05" rpy=" 0 0 0"/>
+                                                      <origin xyz="-0.15 0 -0.15" rpy=" 0 0 0"/>
                                                       <geometry>
                                                         <sphere radius="0.05"/>
                                                       </geometry>
                                                     </visual>
 
                                                     <collision name='front_caster_collision'>
-                                                      <origin xyz="0.15 0 -0.05" rpy=" 0 0 0"/>
+                                                      <origin xyz="0.15 0 -0.15" rpy=" 0 0 0"/>
                                                       <geometry>
                                                         <sphere radius="0.0499"/>
                                                       </geometry>
                                                     </collision>
 
                                                     <visual name='front_caster_visual'>
-                                                      <origin xyz="0.15 0 -0.05" rpy=" 0 0 0"/>
+                                                      <origin xyz="0.15 0 -0.15" rpy=" 0 0 0"/>
                                                       <geometry>
                                                         <sphere radius="0.05"/>
                                                       </geometry>
@@ -80,13 +80,13 @@
     <visual>
       <origin xyz="0.0 0.0 0.0" rpy="0 1.5707 1.5707"/>
       <geometry>
-        <cylinder length="0.05" radius="0.1"/>
+        <cylinder length="0.05" radius="0.2"/>
       </geometry>
     </visual>
     <collision>
       <origin xyz="0.0 0.0 0.0" rpy="0.0 1.5707 1.5707"/>
       <geometry>
-        <cylinder length="0.05" radius="0.1"/>
+        <cylinder length="0.05" radius="0.2"/>
       </geometry>
     </collision>
     <inertial>
@@ -114,13 +114,13 @@
     <visual>
       <origin xyz="0.0 0.0 0.0" rpy="0 01.5707 1.5707"/>
       <geometry>
-        <cylinder length="0.05" radius="0.1"/>
+        <cylinder length="0.05" radius="0.2"/>
       </geometry>
     </visual>
     <collision>
       <origin xyz="0.0 0.0 0.0" rpy="0.0 1.5707 1.5707"/>
       <geometry>
-        <cylinder length="0.05" radius="0.1"/>
+        <cylinder length="0.05" radius="0.2"/>
       </geometry>
     </collision>
     <inertial>
@@ -175,7 +175,7 @@
 
 
   <joint type="fixed" name="hokuyo_joint">
-    <origin xyz="0.15 0 0.1" rpy="0 0 0"/>
+    <origin xyz="0.15 0 0.22" rpy="0 0 0"/>
     <child link="hokuyo"/>
     <parent link="chassis"/>
     <axis xyz="0 1 0" rpy="0 0 0"/>
